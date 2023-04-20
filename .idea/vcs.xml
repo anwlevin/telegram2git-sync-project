@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/some-tgbot-data" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/store-private-telegram-channels-collection" vcs="Git" />
   </component>
 </project>

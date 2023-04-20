@@ -38,11 +38,3 @@ def datetime_now():
     return datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
 
 
-def git_add_file_commit_and_push(repo_path, file_path):
-    repo = Repo(pathlib.Path(repo_path).absolute().as_posix())
-    file = pathlib.Path(file_path)
-    repo.index.add([file.as_posix()])
-
-    comment = f'Add {file.name} at {datetime_now()}'
-    repo.index.commit(comment)
-    repo.remote('origin').push()
